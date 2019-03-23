@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  api:
+    build: api
+    command: npm start
+    ports:
+      - "3001:3001"
+  front:
+    build: front
+    command: npm start
+    ports:
+      - "3000:3000"
